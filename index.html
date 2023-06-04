@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYPRO2077</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top center">
+        <header class="main">
+            <div class="main__top">
+                <h2 class="main__text">Добро пожаловать <br>на мой сайт !</h2>
+                <p class="main__about">Вам предстоит пройти несколько увлекательных игр. <br>Если готов нажимай <span
+                        class="main__span">поехали</span> и <span class="main__span">приступай</span>
+                </p>
+                <form class="main__form" action="#">
+                    <a href="#select"><button class="main__btn" type="button">Поехали!</button></a>
+                </form>
+            </div>
+        </header>
+    </div>
+    <div class="game center" id="select">
+        <div class="game__select">
+            <a class="game__point" href="#game1">
+                <div class="game__link game__link_1">
+                    <h1 class="game__text">Игра 1</h1>
+
+                </div>
+            </a>
+            <a class="game__point" href="#game2">
+                <div class="game__link game__link_2">
+                    <h1 class="game__text">Игра 2</h1>
+                </div>
+            </a>
+            <a class="game__point" href="#game3">
+                <div class="game__link game__link_3">
+                    <h1 class="game__text">Игра 3</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="game__one center" id="game1">
+        <div class="game__about">
+            <h2 class="main__text">Времена года!</h2>
+            <p class="main__about">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и Вы узнаете к какому
+                времени
+                года он относится</p>
+            <form class="main__form" action="#">
+                <button class="main__btn" onclick="gameOne()" type="button">Играть!</button>
+            </form>
+        </div>
+        <div class="game__img">
+            <img class="game__img1" src="img/game1main.png" alt="Game 1">
+            <img class="game__img1lt" src="img/game1mainLT.png" alt="Game 1">
+
+        </div>
+    </div>
+    <div class="game__two center" id="game2">
+        <div class="game__about">
+            <h2 class="main__text">Запомни слова</h2>
+            <p class="main__about">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <form class="main__form" action="#">
+                <button class="main__btn" onclick="gameTwo()" type="button">Играть!</button>
+            </form>
+        </div>
+        <div class="game__img">
+            <img class="game__img2" src="img/game2mian.png" alt="Game 2">
+            <img class="game__img2lt" src="img/game2mainLT.png" alt="Game 2">
+        </div>
+    </div>
+    <div class="game__three center" id="game3">
+        <div class="gamethree__about">
+            <h2 class="main__text">Игра в загадки</h2>
+            <p class="gamethree__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не
+                правильный
+                ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <form class="main__form" action="#">
+                <button class="main__btn" onclick="gameThree()" type="button">Играть!</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <h1 class="footer__text">Все права защищены</h1>
+        </footer>
+    </div>
+    <script src="js/game1.js"></script>
+    <script src="js/game2.js"></script>
+    <script src="js/game3.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
